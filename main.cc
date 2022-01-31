@@ -1,6 +1,7 @@
 //Theo Andonyadis
-//ECE 2620 Section 001
-//Lab 4 Extra Credit
+/*This program uses a function called findmax to find the maximum value in a 5 member array. This function is used to find the maximum value of each line of an input file and
+writes the output as an array of only maximum integers with the same amount of lines as the input file. It differs from the first findmax-function program in that this version
+is templated*/
 #include <iostream>
 #include <cmath>
 #include <limits>
@@ -21,8 +22,8 @@ void maincopy()		//templated maincopy function allows values of any type from in
 	T x1, x2, x3, x4, x5;	//declares the values of the lines as templated
 	ifstream infile;		//creates infile and outfile objects for reading/writing
 	ofstream outfile;
-	infile.open("lab4_input.txt");		//uses ifstream member function open to open the input text file for reading
-	outfile.open("lab4_output.txt");
+	infile.open("findmaxinput.txt");		//uses ifstream member function open to open the input text file for reading
+	outfile.open("findmaxoutput.txt");
 	if (infile.is_open())		//if condition checks to ensure the infile is really open
 	{
 		int i=0;
